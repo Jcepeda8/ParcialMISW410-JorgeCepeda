@@ -35,5 +35,10 @@
         </tr>
       </tbody>
     </table>
+    <div class="totales" *ngIf="vehiculos.length">
+      <div *ngFor="let c of conteoPorMarca | keyvalue">
+        <span>Total {{ c.key }}:</span> {{ c.value }}
+      </div>
+    </div>
   </div>
 </div>

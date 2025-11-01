@@ -21,4 +21,14 @@ export class VehiculoListComponent implements OnInit {
     this.getVehiculos();
   }
 
+  get conteoPorMarca(): { [marca: string]: number } {
+    const acc: { [marca: string]: number } = {};
+    for (const v of this.vehiculos) {
+      const m = (v.marca ?? '').trim();
+      if (!m) continue;
+      acc[m] = (acc[m] ?? 0) + 1;
+    }
+    return acc;
+  }
+  
 }
