@@ -1,0 +1,50 @@
+.sheet { 
+  padding-top: 8px; 
+}
+.brand { 
+  margin: 0 0 6px 0; 
+  font-weight: 700; 
+  padding-bottom: 8px; 
+  border-bottom: 2px solid #e5e7eb;  
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); 
+}
+.hero { 
+  position: relative; 
+  width: 100%; 
+  height: 240px; 
+  overflow: hidden; 
+  padding-bottom: 8px; 
+  border-bottom: 2px solid #e5e7eb;
+}
+.hero-img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  object-position: right center; 
+}
+
+.table-wrap { 
+  margin-top: 10px; 
+  max-width: 680px; 
+} 
+.table thead tr.thead-dark th {
+  background: #2f3a43; color: #fff; border: none; font-weight: 600;
+}
+.table tbody tr { 
+  border-bottom: 1px solid #e9ecef; 
+}
+.table th, .table td { 
+  padding: 12px 14px;
+  text-align: center;
+  vertical-align: middle; 
+}
+.hash { 
+  width: 56px; text-align: center; font-weight: bold; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero { height: 190px; }
+  .table-wrap { max-width: 100%; }
+}
+

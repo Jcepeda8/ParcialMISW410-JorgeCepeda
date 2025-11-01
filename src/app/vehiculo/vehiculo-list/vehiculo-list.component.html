@@ -1,0 +1,39 @@
+<div class="sheet container">
+  <h3 class="brand">TuSegundazo.com</h3>
+  <div class="hero">
+    <img
+      src="https://github.com/user-attachments/assets/f81854f0-256f-48cc-a755-1dd01c9d392d"
+      alt="Imagen tu segundazo"
+      class="hero-img"
+      loading="lazy"
+    />
+  </div>
+<div class="table-wrap">
+    <table class="table table-borderless align-middle">
+      <thead>
+        <tr class="thead-dark">
+          <th class="hash">#</th>
+          <th>Marca</th>
+          <th>Línea</th>
+          <th>Modelo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let v of vehiculos">
+          <td class="hash">
+            <dd>{{v.id}}</dd>
+          </td>
+          <td>
+            <dd>{{v.marca}}</dd>
+          </td>
+          <td>
+            <dd>{{v.linea}}</dd>
+          </td>
+          <td>
+            <dd>{{v.modelo}}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

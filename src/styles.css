@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.site-footer {
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb; 
+  color: #6c757d;                  
+  font-size: 0.9rem;             
+  font-weight: 400;
+}
+.site-footer small { 
+    margin: 0; display: inline-block; 
+}
+.site-footer .line { 
+    margin: 0 8px; 
+}
